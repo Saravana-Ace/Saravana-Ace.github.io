@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<style>
+
+</style>
+<meta charset="utf-8" />
+<title>Demo-TextArea</title>
+<link rel="stylesheet" type="text/css" href="jquery-ui.css">
+
+<script src="jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+$(document).ready(function() {
+$("#myTextArea").html(">_");
+
+setInterval(function(){
+removeAndAppendBlickWraper();
+},2000);
+
+});
+
+function removeAndAppendBlickWraper(){
+        removeAndAppendBlick(function(){
+
+                var text = $("#myTextArea").val(),
+                withCursortext =text+">_";
+                $("#myTextArea").val(withCursortext);
+
+        });
+}
+function removeAndAppendBlick(callback){
+var text = $("#myTextArea").val();
+ var witoutCursor = text.substr(0,text.lastIndexOf(">_"));
+ $("#myTextArea").val(witoutCursor);
+ setTimeout(function(){
+ callback();
+ },1500);
+
+}
+
+</script>
+</head>
+<body>
+<textarea id="#myTextArea" style="background-color: black;color: green;" rows="10" cols="50">text inside</textarea>
+</body>
+</html>

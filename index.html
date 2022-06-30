@@ -1,0 +1,686 @@
+<!DOCTYPE HTML>
+<!--
+Hyperspace by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<!-- <title>Hyperspace by HTML5 UP</title> -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	<!-- This is the CSS styling for the terminal window -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<style type="text/css">
+
+	body {
+		margin: 0px;
+		padding: 0px;
+		height: 99%;
+	}
+	textarea#setter  {
+		left: -10000px;
+		position: absolute;
+	}
+	.cursor {
+		font-size: 12px;
+		background-color: white;
+		color: white;
+		position: relative;
+	}
+	#terminal {
+		position: absolute;
+		top: 19%;
+		/* absolute */
+		right: 15%;
+		/* fixed */
+		/* right: 11%; */
+		margin: 5px;
+		cursor: text;
+		height: 500px;
+		width: 800px;
+		overflow: auto;
+		background-color: black;
+		color: white;
+		border-style: solid;
+		border-width: thick;
+		border-color: grey;
+	}
+	#writer {
+		font-family: cursor, courier;
+		color:white
+		font-weight: bold;
+	}
+	#getter {
+		margin: 0.70%;
+	}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Sidebar -->
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li><a href="#intro">Who Am I?</a></li>
+					<li><a href="#Experience">Experience</a></li>
+					<li><a href="#Skills">Skills</a></li>
+					<li><a href="#Projects">Projects</a></li>
+					<!-- Added another section to the sidebar need to link it up with the rest of the code-->
+					<!-- also will include resume in my course work -->
+					<li><a href="#Coursework">Coursework</a></li>
+
+					<!-- finally the contact section  -->
+					<li><a href="#Contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Intro -->
+		<section id="intro" class="wrapper style1 fullscreen fade-up">
+			<span>
+				<div id="terminal">
+					<textarea type="text" id="setter"></textarea>
+					<div id="getter">
+						<i class="fa fa-terminal" aria-hidden="true"></i>:
+						<span id="writer">Nice to meet you! My name is Saravana Polisetti, and I'm a sophomore studying Computer Science and Data Science
+						at Purdue University. This year I will be pursuing an Algorithmic Foundations track and a Machine Intilligence track through my Computer
+						Science major. I always love learning new subjects, and some of my keen interests are iOS Application Development, Machine Learning,
+					 	the Unix Operating System, and Data Science.</br></span>
+
+						<i class="fa fa-terminal" aria-hidden="true"></i>:</br>
+						<i class="fa fa-terminal" aria-hidden="true"></i>:</br>
+						<i class="fa fa-terminal" aria-hidden="true"></i>:</br>
+						<i class="fa fa-terminal" aria-hidden="true"></i>:
+
+						<span id="writer">When I'm not busy programming, I'm playing ice hockey or basketball,
+							watching a Warriors game, or driving till I run out of gas. :)</br>
+							<i class="fa fa-terminal" aria-hidden="true"></i>: clear
+						</span>
+						<b class="cursor" id="cursor">B</b>
+
+					</div>
+				</div>
+
+				<script type="text/javascript">
+				// var cursor = $("#cursor");
+				// var setter = $("#setter");
+				// var writer = $("#writer");
+				// var terminal = $("#terminal");
+				// $(cursor).css("left", "0px");
+				// function nl2br(txt){
+				// 	return txt.replace(/\n/g, '<br /><i class="fa fa-terminal" aria-hidden="true"></i>:');
+				// }
+
+				//if you don't want anyboody to write in the terminal
+				// function writeit(from, e){
+				//   e = e || window.event;
+				//   var w = $(writer);
+				//   var tw = from.value;
+				//   w.html(nl2br(tw));
+				// }
+
+				// function moveIt(count, e){
+				// 	e = e || window.event;
+				// 	var keycode = e.keyCode || e.which;
+				// 	if(keycode == 37 && parseInt($(cursor).css("left")) >= (0-((count-1)*10))){
+				// 		$(cursor).css("left", parseInt($(cursor).css("left")) - 10 + "px");
+				// 	} else if(keycode == 39 && (parseInt($(cursor).css("left")) + 10) <= 0){
+				// 		$(cursor).css("left", parseInt($(cursor).css("left")) + 10 + "px");
+				// 	}
+				// }
+				function blink(){
+					if($(cursor).css("display") == "none"){
+						$(cursor).css("display","inline");
+					} else {
+						$(cursor).css("display","none");
+					}
+				}
+				setInterval("blink()", 500);
+				$(terminal).click(function(){
+					$(setter).focus();
+				});
+				// $(setter).keydown(function(event){
+				// 	writeit(this, event);
+				// 	moveIt(this.value.length, event);
+				// });
+				// $(setter).keyup(function(event){
+				// 	writeit(this, event);
+				// });
+				// $(setter).keypress(function(event){
+				// 	writeit(this, event);
+				// });
+				</script>
+			</span>
+
+		</section>
+
+		<!-- Experience -->
+		<section id="Experience" class="wrapper style1 spotlights" >
+				<div id="terminal">
+					<div id="getter">
+
+						<i class="fa fa-terminal" aria-hidden="true"></i>:
+						<span id="writer">
+							cd /Users/saravanapolisetti/Desktop/<b style="color:#AA96DA">Experience</b></br>
+							<i class="fa fa-terminal" aria-hidden="true"></i>: ls
+						</span>
+						</br>
+
+						<div class="row" id="writer">
+							<article class="col-6 col-12-xsmall work-item" style="text-align:center;">
+								<a href="https://www.apichat.org/tobacco-resources" target="_blank" rel="noopener noreferrer" class="image left thumb">
+									<img src="images/Bacr.jpeg" width="20%" alt="" />
+								</a>
+								</br>
+
+									<h3>BACR: API-CHAT </br></h3>
+
+									<p><i>Front + Back End Developer</i> </br> October 2020 - August 2021</p>
+
+								</br></br>
+
+									<p>Developed an internet-based game that exposes the dangerous tactics employed by the tobacco industry,
+									utilizing React, HTML, CSS, and JavaScript.</p>
+
+							</article>
+
+							<article class="col-6 col-12-xsmall work-item" style="text-align:center;">
+								<a href="http://www.tsgc.utexas.edu/sees-internship/" target="_blank" rel="noopener noreferrer" class="image left thumb">
+									<img src="images/Nasa.png" width="20%"alt="" />
+								</a>
+
+								</br>
+
+								<h3>NASA SEES</br></h3>
+
+								<p><i>Summer Research Intern</i></br> June 2020 - August 2020</p>
+
+								</br></br>
+
+								<p> Utilized deep learning and remote sensing with NASA satellite data to map out mosquito habitats. Featured on
+									<a href="https://www.mercurynews.com/2020/08/23/teens-nasa-internships-help-take-a-bite-out-of-infectious-diseases/" target="_blank" rel="noopener noreferrer">
+									Mercury News.</a>
+								</p>
+							</article>
+
+							<article class="col-6 col-12-xsmall work-item" style="text-align:center;">
+								<a href="https://www.thecodingsociety.com/" target="_blank" rel="noopener noreferrer" class="image left thumb">
+									<img src="images/CS.png" alt="" />
+								</a>
+
+								</br>
+
+								<h3>Coding Society</br></h3>
+								<p><i>Co-CEO and CO-Founder</i></br> October 2020 - August 2021</p>
+
+							</br>
+
+								<p> Nonprofit organization that produced free online
+									Java, Python, and C++ courses to help students.</p>
+							</article>
+						</div>
+
+						<i class="fa fa-terminal" aria-hidden="true"></i>:
+						<span id="writer">
+							cd /Users/saravanapolisetti/Desktop/<b style="color:#AA96DA">Skills</b></br>
+						</span>
+					</div>
+				</div>
+				<section style="background-color:black">
+				</section>
+				<section style="background-color:black">
+				</section>
+		</section>
+
+		<!-- Skills -->
+		<!-- if someone types in ls then show my skills -->
+		<section id="Skills" class="wrapper style1 spotlights">
+			<section>
+				<div id="terminal">
+					<div id="getter">
+						<i class="fa fa-terminal" aria-hidden="true"></i>:
+						<span id="writer">
+							pwd
+						</span>
+						</br>
+						<span id="writer">
+							/Users/saravanapolisetti/Desktop/<b style="color:#AA96DA">Skills</b>
+						</span>
+						</br>
+						<i class="fa fa-terminal" aria-hidden="true"></i>:
+						<span id="writer">
+							ls
+						</span>
+						</br>
+						<div class="table-wrapper">
+							<table class="alt" style="text-align:center;">
+								<thead>
+									<tr>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Java</td>
+										<td>JavaScript</td>
+									</tr>
+									<tr>
+										<td>C++</td>
+										<td>HTML & CSS</td>
+									</tr>
+									<tr>
+										<td>Python & R</td>
+										<td>React (beginner)</td>
+									</tr>
+									<tr>
+										<td>Swift</td>
+										<td>Unix</td>
+									</tr>
+								</tbody>
+							</table>
+							<i class="fa fa-terminal" aria-hidden="true"></i>:</br>
+							<i class="fa fa-terminal" aria-hidden="true"></i>:</br>
+							<i class="fa fa-terminal" aria-hidden="true"></i>:</br>
+							<i class="fa fa-terminal" aria-hidden="true"></i>:
+					</div>
+				</div>
+			</section>
+
+			<section style="background-color:black">
+			</section>
+
+		</section>
+
+		<!-- Hoverable dropown css code -->
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		.dropbtn {
+			background-color: #04AA6D;
+			color: white;
+			padding: 16px;
+			font-size: 16px;
+			border: solid;
+		}
+
+		.dropdown {
+			position: relative;
+			display: inline;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: white;
+			/* box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2); */
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+
+		.dropdown-content a:hover {background-color: black; color:white;}
+		.dropdown:hover .dropdown-content {display: flex;}
+		.dropdown:hover .dropbtn {background-color: white;}
+		</style> -->
+
+		<!-- <div class="dropdown">
+			<img src="images/Nasa.png" alt="" width="20%" style="border:solid;"/>
+			<div class="dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+		</div> -->
+
+		<!-- Projects -->
+		<section id="Projects" class="wrapper style1 spotlights">
+			<div id="terminal">
+				<div id="getter">
+					<span id="writer">
+						<i class="fa fa-terminal" aria-hidden="true"></i>:
+						<span id="writer">
+							cd ..
+							</br>
+							<i class="fa fa-terminal" aria-hidden="true"></i>:
+							open <b style="color:#AA96DA">Projects</b>
+					</span>
+					</br>
+
+					<div class="row" id="writer">
+						<article class="col-6 col-12-xsmall work-item" style="text-align:center;">
+							<a href="https://master--hungry-curran-115f26.netlify.app/" target="_blank" rel="noopener noreferrer" class="image left">
+								<img src="images/TobaccoAwareness.png" alt="" data-position="top center"/>
+							</a>
+						</br>
+
+								<h3>BACR: API-CHAT </br></h3>
+
+								<p><i>Tobacco Awareness Game</i></p>
+
+						</article>
+
+						<article class="col-6 col-12-xsmall work-item" style="text-align:center;">
+							<a href="PaperAndCerts.pdf" target="_blank" rel="noopener noreferrer" class="image left">
+								<img src="images/Nasa.png" alt="" />
+							</a>
+
+							</br>
+
+							<h3>NASA SEES</br></h3>
+
+							<p><i>Internship Research Paper & Certificates</i></br></p>
+						</article>
+
+						<article class="col-6 col-12-xsmall work-item" style="text-align:center;">
+							<a href="https://github.com/Saravana-Ace/IOS-Swift-Applications" target="_blank" rel="noopener noreferrer" class="image left thumb">
+								<img src="images/AppleLogo.png" alt="" style="background-color: white"/>
+							</a>
+
+							</br></br>
+
+							<h3>iOS Appications</br></h3>
+							<p><i>Apps increases in functionality</i></br></p>
+
+
+						</article>
+
+						<article class="col-6 col-12-xsmall work-item" style="text-align:center;">
+							<a href="local_connect_remote.pdf" target="_blank" rel="noopener noreferrer" class="image left thumb">
+								<img src="images/git.png" alt="" style="background-color: white"/>
+							</a>
+
+							</br></br>
+
+							<h3>Simple Git Guide</br></h3>
+							<p><i>Connecting Local Repo to Remote Repo</i></br></p>
+
+						</article>
+					</div>
+				</div>
+			</div>
+			<section style="background-color:black">
+			</section>
+			<section style="background-color:black">
+			</section>
+		</section>
+
+		<!-- Coursework -->
+		<section id="Coursework" class="wrapper style1 spotlights">
+			<section>
+				<div id="terminal">
+					<div id="getter">
+						<i class="fa fa-terminal" aria-hidden="true"></i>:
+						<span id="writer">
+							cd /Users/saravanapolisetti/Desktop/<b style="color:#AA96DA">Coursework</b>
+						</span>
+						<span id="writer">
+						</span>
+						</br>
+						<i class="fa fa-terminal" aria-hidden="true"></i>:
+						<span id="writer">
+							pwd </br> <h3 style="text-align:center;"><u>Purdue University</u></h3>
+						</span>
+							<div class="table-wrapper">
+								<table class="alt" style="text-align:center;">
+									<tbody>
+										<tr>
+											<td colspan="2" style="text-align:center; border:double;">Fall 2022</td>
+										</tr>
+										<tr>
+											<td>CS 240</td>
+											<td>Programming in C</td>
+										</tr>
+										<tr>
+											<td>CS 242</td>
+											<td>Introduction to Data Science</td>
+										</tr>
+										<tr>
+											<td>CS 250</td>
+											<td>Computer Architecture</td>
+										</tr>
+										<tr>
+											<td>STAT 355</td>
+											<td>Statistics for Data Science</td>
+										</tr>
+
+										<tr>
+											<td colspan="2" style="text-align:center; border:double;">Spring 2022</td>
+										</tr>
+										<tr>
+											<td>CS 182</td>
+											<td>Foundations of Computer Science (Discrete Math)</td>
+										</tr>
+										<tr>
+											<td>CS 380</td>
+											<td>Python Programming</td>
+										</tr>
+										<tr>
+											<td>MA 351</td>
+											<td>Elementary Linear Algebra</td>
+										</tr>
+										<tr>
+											<td>STAT 190</td>
+											<td>The Data Mine (Seminar & Corporate Partners)</td>
+										</tr>
+										<tr>
+											<td colspan="2" style="text-align:center; border:double;">Fall 2021</td>
+										</tr>
+										<tr>
+											<td>CS 180</td>
+											<td>Problem Solving & Object Oriented Programming</td>
+										</tr>
+										<tr>
+											<td>CS 193</td>
+											<td>Computer Science Tools</td>
+										</tr>
+
+										<tr>
+											<td>STAT 190</td>
+											<td>The Data Mine (Seminar & Corporate Partners)</td>
+										</tr>
+									</tbody>
+								</table>
+
+
+								<h3 style="text-align:center;"><u>De Anza College</u></h3>
+								<table class="alt" style="text-align:center;">
+									<tbody>
+										<tr>
+											<td colspan="2" style="text-align:center; border:double;">High School Dual Enrollment</td>
+										</tr>
+										<tr>
+											<td>CIS 22A</td>
+											<td>Beginning C++</td>
+										</tr>
+										<tr>
+											<td>CIS 22B</td>
+											<td>Intermediate C++</td>
+										</tr>
+										<tr>
+											<td>CIS 22C</td>
+											<td>Data Structures & Algorithms in C++</td>
+										</tr>
+										<tr>
+											<td>MATH 10</td>
+											<td>Introductory Statistics</td>
+										</tr>
+										<tr>
+											<td>MATH 1C</td>
+											<td>Calculus 2</td>
+										</tr>
+										<tr>
+											<td>MATH 1D</td>
+											<td>Multivariable Calculus</td>
+										</tr>
+										<tr>
+											<td>PHYS 4A</td>
+											<td>Physics: Mechanics</td>
+										</tr>
+										<tr>
+											<td>PHYS 4B</td>
+											<td>Physics: Electricity & Magnetism</td>
+										</tr>
+										<tr>
+											<td>PHYS 4C</td>
+											<td>Fluids, Optics, Thermodynamics</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</div>
+			</section>
+			<section style="background-color:black">
+			</section>
+		</section>
+
+		<!-- Contact -->
+		<section id="Contact" class="wrapper style1 spotlights">
+			<section>
+				<div id="terminal">
+					<div id="getter">
+						<div class="inner">
+							<i class="fa fa-terminal" aria-hidden="true"></i>:
+							<span id="writer">
+								<b style="color:#AA96DA">contact</b> Saravana
+							</span>
+							<!-- <h2 style="text-align:center"><b style="color:#AA96DA">Contact</b></h2>
+							<p style="text-align:center">Please feel free to reach out to me!</p> -->
+							<div class=" style1">
+								<!-- <section style="text-align:center">
+								</section> -->
+							</br></br>
+								<section>
+									<ul class="contact" style="text-align:center">
+											<li>
+												<h3>Email</h3>
+												<a href="mailto: saravanaking1@gmail.com">saravanaking1@gmail.com</a></br>
+												<a href="mailto: sppolise@purdue.edu">sppolise@purdue.edu</a>
+											</li>
+											<li>
+												<h3>Phone</h3>
+												<span>(408) 913-5089</span>
+											</li>
+											<li>
+												<h3>Social</h3>
+												<ul class="icons">
+													<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+													<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+													<li>
+														<a href="https://github.com/Saravana-Ace" target="_blank" rel="noopener noreferrer" class="icon brands fa-github">
+														<span class="label">GitHub</span>
+														</a>
+													</li>
+
+													<li>
+														<a href="https://www.linkedin.com/in/saravana-polisetti-505a94175/" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin-in">
+															<span class="label">LinkedIn</span>
+														</a>
+													</li>
+
+													<li>
+														<a href="https://www.instagram.com/saravana.polisetti/" target="_blank" rel="noopener noreferrer" class="icon brands fa-instagram">
+															<span class="label">Instagram</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+										<i class="fa fa-terminal" aria-hidden="true"></i>:
+									<b class="cursor" id="cursor">B</b>
+									</section>
+								</div>
+							</div>
+					</div>
+				</div>
+			</section>
+			<section style="background-color:black">
+			</section>
+		</section>
+
+			<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu" style="color:black;">
+						<li>&copy; Untitled. All rights reserved.</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		</body>
+		</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- <div id="terminal">
+			<textarea type="text" id="setter"></textarea>
+			<div id="getter">
+				<span id="writer">
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="images/fulls/01.jpg" class="image thumb"><img src="images/Bacr.jpeg" width="20%"alt="" /></a>
+						<h3>Magna sed consequat tempus</h3>
+						<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.Lorem ipsum dolor sit amet nisl sed nullam feugiat.Lorem ipsum dolor sit amet nisl sed nullam feugiat.Lorem ipsum dolor sit amet nisl sed nullam feugiat.Lorem ipsum dolor sit amet nisl sed nullam feugiat.Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+					</article>
+			</br></span>
+
+				<i class="fa fa-terminal" aria-hidden="true"></i>:</br>
+				<i class="fa fa-terminal" aria-hidden="true"></i>:</br>
+				<i class="fa fa-terminal" aria-hidden="true"></i>:</br>
+				<i class="fa fa-terminal" aria-hidden="true"></i>:
+
+				<span id="writer">When I'm not busy programming, I'm playing ice hockey or basketball,
+					watching a Warriors game, or driving till I run out of gas. :)</span>
+				<b class="cursor" id="cursor">B</b>
+
+			</div>
+		</div> -->
