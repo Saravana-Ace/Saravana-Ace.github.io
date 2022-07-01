@@ -63,6 +63,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		margin: 0.70%;
 	}
 	</style>
+
 </head>
 
 <body class="is-preload">
@@ -90,84 +91,47 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 	<!-- Wrapper -->
 	<div id="wrapper">
 
-		<!-- Intro -->
-		<section id="intro" class="wrapper style1 fullscreen fade-up">
-			<span>
-				<div id="terminal">
-					<textarea type="text" id="setter"></textarea>
-					<div id="getter">
-						<i class="fa fa-terminal" aria-hidden="true"></i>:
-						<span id="writer">Nice to meet you! My name is Saravana Polisetti, and I'm a sophomore studying Computer Science and Data Science
-						at Purdue University. This year I will be pursuing an Algorithmic Foundations track and a Machine Intilligence track through my Computer
-						Science major. I always love learning new subjects, and some of my keen interests are iOS Application Development, Machine Learning,
-					 	the Unix Operating System, and Data Science.</br></span>
+	<!-- Experience -->
+	<section id="intro" class="wrapper style1 spotlights" >
+			<div id="terminal">
+				<div id="getter">
+					<i class="fa fa-terminal" aria-hidden="true"></i>:
+					<span id="writer">Nice to meet you! My name is Saravana Polisetti, and I'm a sophomore studying Computer Science and Data Science
+					at Purdue University. This year I will be pursuing an Algorithmic Foundations track and a Machine Intilligence track through my Computer
+					Science major. I always love learning new subjects, and some of my keen interests are iOS Application Development, Machine Learning,
+					the Unix Operating System, and Data Science.</br></span>
 
-						<i class="fa fa-terminal" aria-hidden="true"></i>:</br>
-						<i class="fa fa-terminal" aria-hidden="true"></i>:</br>
-						<i class="fa fa-terminal" aria-hidden="true"></i>:</br>
-						<i class="fa fa-terminal" aria-hidden="true"></i>:
+					<i class="fa fa-terminal" aria-hidden="true"></i>:</br>
+					<i class="fa fa-terminal" aria-hidden="true"></i>:</br>
+					<i class="fa fa-terminal" aria-hidden="true"></i>:</br>
+					<i class="fa fa-terminal" aria-hidden="true"></i>:
 
-						<span id="writer">When I'm not busy programming, I'm playing ice hockey or basketball,
-							watching a Warriors game, or driving till I run out of gas. :)</br>
-							<i class="fa fa-terminal" aria-hidden="true"></i>: clear
-						</span>
-						<b class="cursor" id="cursor">B</b>
-
-					</div>
-				</div>
+					<span id="writer">When I'm not busy programming, I'm playing ice hockey or basketball,
+						watching a Warriors game, or driving till I run out of gas. :)</br>
+						<i class="fa fa-terminal" aria-hidden="true"></i>: clear
+					</span>
+					<b class="cursor" id="cursor">B</b>
 
 				<script type="text/javascript">
-				// var cursor = $("#cursor");
-				// var setter = $("#setter");
-				// var writer = $("#writer");
-				// var terminal = $("#terminal");
-				// $(cursor).css("left", "0px");
-				// function nl2br(txt){
-				// 	return txt.replace(/\n/g, '<br /><i class="fa fa-terminal" aria-hidden="true"></i>:');
-				// }
-
-				//if you don't want anyboody to write in the terminal
-				// function writeit(from, e){
-				//   e = e || window.event;
-				//   var w = $(writer);
-				//   var tw = from.value;
-				//   w.html(nl2br(tw));
-				// }
-
-				// function moveIt(count, e){
-				// 	e = e || window.event;
-				// 	var keycode = e.keyCode || e.which;
-				// 	if(keycode == 37 && parseInt($(cursor).css("left")) >= (0-((count-1)*10))){
-				// 		$(cursor).css("left", parseInt($(cursor).css("left")) - 10 + "px");
-				// 	} else if(keycode == 39 && (parseInt($(cursor).css("left")) + 10) <= 0){
-				// 		$(cursor).css("left", parseInt($(cursor).css("left")) + 10 + "px");
-				// 	}
-				// }
-				function blink(){
-					if($(cursor).css("display") == "none"){
-						$(cursor).css("display","inline");
-					} else {
-						$(cursor).css("display","none");
+					function blink(){
+						if($(cursor).css("display") == "none"){
+							$(cursor).css("display","inline");
+						} else {
+							$(cursor).css("display","none");
+						}
 					}
-				}
-				setInterval("blink()", 500);
-				$(terminal).click(function(){
-					$(setter).focus();
-				});
-				// $(setter).keydown(function(event){
-				// 	writeit(this, event);
-				// 	moveIt(this.value.length, event);
-				// });
-				// $(setter).keyup(function(event){
-				// 	writeit(this, event);
-				// });
-				// $(setter).keypress(function(event){
-				// 	writeit(this, event);
-				// });
+					setInterval("blink()", 500);
+					$(terminal).click(function(){
+						$(setter).focus();
+					});
 				</script>
-			</span>
-
-		</section>
+				</div>
+			</div>
+			<section style="background-color:black">
+			</section>
+			<section style="background-color:black">
+			</section>
+	</section>
 
 		<!-- Experience -->
 		<section id="Experience" class="wrapper style1 spotlights" >
