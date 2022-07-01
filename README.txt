@@ -1,6 +1,6 @@
 Saravana's Website
 
-
+Finally got it to work on phone displays, but I recommend opening it on a bigger display such as an iPad or a Mac. 
 Credits:
 
 	Demo Images:
