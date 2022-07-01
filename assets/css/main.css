@@ -3324,17 +3324,14 @@ section, summary, time, mark, audio, video {
 		}
 
 		.wrapper.alt {
-			/* footer background color for other pages */
 			background-color: #FCBAD3;
 		}
 
 		.wrapper.style1 {
-			/* intro & contact background color */
 			background-color: black;
 		}
 
 		.wrapper.style1-alt {
-			/* footer background color */
 			background-color: white;
 		}
 
@@ -3347,7 +3344,6 @@ section, summary, time, mark, audio, video {
 		}
 
 		.wrapper.style3 {
-			/* skills background color */
 			background-color: lightpink;
 		}
 
